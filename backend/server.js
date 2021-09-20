@@ -3,7 +3,6 @@ import dotenv from 'dotenv'
 import colors from 'colors'
 import morgan from 'morgan'
 import path from 'path'
-import secure from 'express-force-https'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 dotenv.config()
 console.log('DB COnnetion',process.env.MONGO_URI)
@@ -23,7 +22,6 @@ if (process.env.NODE_ENV === 'development') {
 
 app.use(express.json())
 app.use(express.static('public'))
-app.use(secure);
 app.use(prerender.set('prerenderToken', prerenderToken));
 
 
