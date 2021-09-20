@@ -24,6 +24,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-slideshow-image": "^3.4.7",
+    "react-snap": "^1.23.0",
     "react-toastify": "^7.0.3",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
